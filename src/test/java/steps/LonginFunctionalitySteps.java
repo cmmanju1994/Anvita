@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
@@ -66,7 +67,9 @@ public void login_should_not_be_succeful_and_warning_messeage_displayed_as(Strin
 
 @When("click on login button")
 public void click_on_login_button() {
-  driver.findElement(By.xpath("//input[@value=\"Login\"]")).click();
+ WebElement ele= driver.findElement(By.xpath("//input[@value=\"Login\"]"));
+ Actions act=new Actions(driver);
+ act.moveToElement(ele).click().build().perform();
 }
 @Then("login should be succeful login and text {string} is being displayed")
 public void login_should_be_succeful_login_and_text_is_being_displayed(String string) {
