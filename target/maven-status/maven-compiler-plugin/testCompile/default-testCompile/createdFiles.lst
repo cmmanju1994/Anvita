@@ -1,0 +1,12 @@
+steps\SonSteps.class
+steps\TagsDemoSteps.class
+runner\TestRunner2.class
+steps\ParalellDemoTests.class
+steps\HooksDemoSteps.class
+steps\AccountRegistrationSteps.class
+steps\DataTableDemo1Steps.class
+steps\LonginFunctionalitySteps.class
+steps\Hooks.class
+steps\HooksDemo1Steps.class
+steps\BackgroundDemoSteps.class
+runner\TestRunner.class
